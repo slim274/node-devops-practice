@@ -2,5 +2,11 @@ const express = require("express");
 const app = express();
 const port = process.env.PORT || 3000;
 
-app.get("/", (req, res) => res.send("Hello I'm Abiodun"));
-app.listen(port, () => console.log(`run on port ${port}`));
+app.get("/", (req, res) => {
+  res.send("Hello from AWS CodePipeline!");
+});
+
+app.listen(port, () => {
+  console.log(`Server is running on port ${port}`);
+});
+

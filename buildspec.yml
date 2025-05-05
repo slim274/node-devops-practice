@@ -11,8 +11,10 @@ phases:
   build:
     commands:
       - echo Build started on `date`
-      - echo Build successful
+      - npm run build || echo "No build script defined, continuing..."
 
 artifacts:
   files:
     - '**/*'
+  discard-paths: yes
+
