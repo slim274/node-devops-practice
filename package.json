@@ -1,8 +1,10 @@
 {
+  "name": "my-node-app",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "echo \"No tests yet\" && exit 0"
+  },
   "dependencies": {
     "express": "^5.1.0"
-  },
-  "scripts": {
-    "build": "echo Skipping build for Express app"
   }
 }
